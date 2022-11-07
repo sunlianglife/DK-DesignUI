@@ -1,0 +1,76 @@
+@primary-upload: #00b42a;
+@ghost-upload: #23c343;
+@disabled-background:#f5f5f5;
+@disabled-border:#f5f5f5;
+@disabled-text:rgba(0, 0, 0, 0.25);
+@primary-grey: #C9CDD4;
+.ant-btn{
+    &-upload {
+        color: #fff;
+        text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+        background:  @primary-upload;
+        border-color:  @primary-upload;
+        box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+        &:hover,
+        &:focus {
+          color: #fff;
+          background: @primary-upload;
+          border-color: @primary-upload;
+        }
+        &[disabled],
+        &[disabled]:hover,
+        &[disabled]:focus,
+        &[disabled]:active {
+          color: @disabled-text;
+          text-shadow: none;
+          background: @disabled-background;
+          border-color: @disabled-border;
+          box-shadow: none;
+        }
+      }
+      &-grey {
+        color: #fff;
+        text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+        background:  @primary-grey;
+        border-color:  @primary-grey;
+        box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+        &:hover,
+        &:focus {
+          color: #fff;
+          background: @primary-grey;
+          border-color: @primary-grey;
+        }
+        &[disabled],
+        &[disabled]:hover,
+        &[disabled]:focus,
+        &[disabled]:active {
+          color: @disabled-text;
+          text-shadow: none;
+          background: @disabled-background;
+          border-color: @disabled-border;
+          box-shadow: none;
+        }
+      }
+      &-background-ghost.ant-btn-download,&-background-ghost.ant-btn-upload {
+        text-shadow: none;
+        color: @ghost-upload;
+        border-color: @ghost-upload;
+        &:hover,
+        &:focus {
+          color: @ghost-upload;
+          background: transparent;
+          border-color: @ghost-upload;
+        }
+        &[disabled],
+        &[disabled]:hover,
+        &[disabled]:focus,
+        &[disabled]:active {
+          color:@disabled-text;
+          text-shadow: none;
+          background: @disabled-background;
+          border-color: @disabled-border;
+          box-shadow: none;
+        }
+      }
+      
+}

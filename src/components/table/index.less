@@ -1,0 +1,73 @@
+.mgcc-table {
+  .ant-table-column-sort {
+    background-color: transparent;
+  }
+
+  .ant-table-thead {
+    .ant-table-cell {
+      color: #1d2129;
+      background-color: #e9ecf1;
+      &::before {
+        display: none;
+      }
+    }
+
+    .ant-table-column-sort {
+      color: #165dff;
+    }
+    // .ant-table-column-sorters {
+    //   display: block;
+    //   white-space: nowrap;
+    //   .icon-zhushi {
+    //     margin: 0 4px;
+    //   }
+    //   .ant-table-column-sorter,.ant-table-column-title{
+    //     display: inline-block;
+    //     vertical-align: middle;
+    //   }
+    //   .ant-table-column-title{
+    //     > div{
+    //       display: inline-block;
+    //       vertical-align: middle;
+    //     }
+    //   }
+    // }
+  }
+  .ant-table.ant-table-middle {
+    + .ant-pagination {
+      color: #86909c;
+    }
+    .ant-table-tbody > tr.ant-table-row-selected > td {
+      background-color: transparent;
+      border-color: #f0f0f0;
+    }
+    &.ant-table-bordered {
+      font-size: 12px;
+      + .ant-pagination {
+        font-size: 12px;
+        .ant-pagination-total-text {
+          line-height: 32px;
+        }
+      }
+    }
+  }
+  .ant-table-tbody > tr.ant-table-placeholder > td{
+    border-bottom-color: transparent;
+  }
+  .checkboxInxWrapper {
+    .inx {
+      color: #c9cdd4;
+    }
+    .checkbox {
+      display: none;
+    }
+    &:hover {
+      .inx {
+        display: none;
+      }
+      .checkbox {
+        display: inline-block;
+      }
+    }
+  }
+}
