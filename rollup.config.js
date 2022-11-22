@@ -59,7 +59,7 @@ const Components = { // 基础组件
     }
    ],
    plugins,
-   external
+   external, // 指出哪些模块需要被视为外部引入
 }
 
 // 多入口多出口，数组配置

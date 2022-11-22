@@ -75,7 +75,5 @@ export {
 } from 'antd';
 import 'antd/dist/antd.css';
 
-const aa = 22
-
 export { Card, Table, Button,Icon, Modal };
 

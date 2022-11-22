@@ -36,30 +36,7 @@ yarn unlink  关闭链接
 #### 基础组件
 
 ```bash
-import {} from 'mega-design-library'
-```
-#### 高级组件
-
-```bash
-import {} from 'mega-design-library/lib/pro'
-```
-
-#### 通用样式
-
-```bash
-@import '~mega-design-library/lib/style.css'
-```
-
-or
-
-```bash
-import 'mega-design-library/lib/style.css'
-```
-
-#### 通用方法
-
-```bash
-import {} from 'mega-design-library/lib/tool'
+import {} from 'dk-designui'
 ```
 
 ### commit 规范
@@ -72,4 +49,15 @@ refactor: A code change that neither fixes a bug nor adds a feature
 perf: A code change that improves performance
 test: Adding missing or correcting existing tests
 chore: Changes to the build process or auxiliary tools and libraries such as documentation generation
+```
+
+```bash
+npm config list 查看npm配置
+npm config get registry 查看当前仓库地址
+npm config set registry 地址 设置目标仓库地址
+npm login  账号登录
+npm who am i   当前登录账号是谁
+npm publish 上传
+npm unpublish dk-designui  --force  包删除
+npm view dk-designui versions 查看包有哪些版本
 ```
